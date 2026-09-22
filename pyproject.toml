@@ -1,0 +1,24 @@
+[project]
+name = "unmanned-systems-basics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "jn89b", email = "jnguyenblue2804@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pymavlink>=2.4.49",
+    "pyqt5>=5.15.11",
+    "pyqtgraph>=0.14.0",
+]
+
+[project.scripts]
+unmanned-systems-basics = "unmanned_systems_basics:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
